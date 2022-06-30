@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mexpense.m_expense">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mexpenseicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mexpenseicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MExpense"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Upload"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".SearchResults"
+            android:exported="true" />
+        <activity
+            android:name=".ImageDisplay"
+            android:exported="true" />
+        <activity
+            android:name=".ImageFiles"
+            android:exported="true" />
+        <activity
+            android:name=".Delete"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Update"
+            android:exported="true"
+            android:label="Update Data"
+            android:parentActivityName=".MainActivity2" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.MExpense.NoActionBar" />
+        <activity
+            android:name=".AddExpenses"
+            android:exported="true"
+            android:label="Add Expense"
+            android:parentActivityName=".Employee" />
+        <activity
+            android:name=".Expenses"
+            android:exported="true"
+            android:label="Expenses" />
+        <activity
+            android:name=".LoginUser"
+            android:exported="true"
+            android:label="User Login"
+            android:logo="@drawable/ic_baseline_person_24" />
+        <activity
+            android:name=".EmployeeLogin"
+            android:exported="true"
+            android:label="Admin Login"
+            android:logo="@drawable/ic_baseline_person_24" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="M-Expense"
+            android:logo="@drawable/ic_baseline_date_range_24">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddDatabase"
+            android:exported="true"
+            android:label="Add a trip"
+            android:logo="@drawable/ic_baseline_add_location_24"
+            android:parentActivityName=".MainActivity2" />
+        <activity
+            android:name=".Employee"
+            android:exported="true"
+            android:label="Admin site"
+            android:logo="@drawable/ic_baseline_add_location_24" />
+
+        <provider
+            android:name=".TakePhotoFragrment$ImageProvider"
+            android:authorities="com.mexpense.m_expense"
+            android:exported="false" />
+    </application>
+
+</manifest>

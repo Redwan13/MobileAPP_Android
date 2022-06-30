@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1B4A1"
+    tools:context=".LocationFragment">
+
+    <TextView
+        android:id="@+id/locate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="#0E0E0E"
+        android:padding="30dp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textSize="20sp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:layout_marginEnd="20dp"
+       android:orientation="horizontal">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="start"
+           android:gravity="start"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/latitude"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Latitude :"
+               android:textColor="#0A0B0A"
+               android:padding="2dp"/>
+           <TextView
+               android:id="@+id/longitude"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Longitude :"
+               android:textColor="#151515"
+               android:padding="2dp"/>
+           <TextClock
+               android:id="@+id/timeclock"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Time :"
+               android:textColor="#040404"
+               android:padding="2dp"
+               android:textSize="30sp"
+               tools:targetApi="jelly_bean_mr1" />
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical|center_horizontal"
+           android:gravity="center"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/country"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Country :"
+               android:textColor="#0E0E0E"
+               android:textAllCaps="true"
+               android:gravity="center"
+               android:layout_gravity="center_vertical|center_horizontal" />
+           <TextView
+               android:id="@+id/locality"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Locality :"
+               android:textColor="#0E0E0E"
+               android:padding="30dp"
+               android:textAllCaps="true"
+               android:gravity="center"
+               android:layout_gravity="center_vertical|center_horizontal"/>
+           <TextView
+               android:id="@+id/address"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Address :"
+               android:textColor="#0E0E0E"
+               android:padding="30dp"
+               android:textAllCaps="true"
+               android:gravity="center"
+               android:layout_gravity="center_vertical|center_horizontal"/>
+
+       </LinearLayout>
+   </LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsFragment" />
+</LinearLayout>

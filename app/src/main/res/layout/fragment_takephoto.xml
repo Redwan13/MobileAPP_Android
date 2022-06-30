@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakePhotoFragrment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TAKE PHOTO"
+        android:textColor="@color/black"
+        android:textSize="16pt"/>
+
+    <ImageView
+        android:id="@+id/imagevieww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_person_24" />
+
+    <Button
+        android:id="@+id/take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TAKE PHOTO"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/imagedb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/take"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_person_24"/>
+    <ImageView
+        android:id="@+id/imagedb1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/take"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_person_24"/>
+    <ImageView
+        android:id="@+id/imagedb2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/take"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_person_24"/>
+
+
+</RelativeLayout>

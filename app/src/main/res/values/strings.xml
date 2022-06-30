@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">M-Expense</string>
+    <string name="hint_admin_access_database_while_user_adds_information">Hint :\n Admin access database while user adds information.</string>
+    <string name="title_activity_expenses">Expenses</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help">Help</string>
+    <string name="location">Location</string>
+    <string name="camera">Camera</string>
+    <string name="title_activity_emplopee_main">EmplopeeMain</string>
+    <string name="title_activity_admin_drawer">AdminDrawer</string>
+    <string name="youtube">Youtube</string>
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="help1"><b><u>Employees\n\n</u></b>
+    <i>1. To add trip details, click the + icon at the bottom right of the page then fill the form that appears\n
+    2. To take photo, click the navigation drawer in the top right of the home page then click camera\n\n</i>
+    <b><u>Admin\n\n</u></b>
+    <i>1. To add expenses, click on the trip details and fill the form that will appear then submit\n
+    2. To clear the database click the menu in the top right of the admins page then in the drop down menu that appears click delete all</i></string>
+</resources>

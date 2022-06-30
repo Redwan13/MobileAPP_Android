@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/testf"
+    tools:context=".AddDatabase">
+
+    <TextView
+        android:id="@+id/textTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@+id/editTextTextPersonName"
+        android:fontFamily="sans-serif-black"
+        android:textFontWeight="500"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="M-Expense"
+        android:textAllCaps="true"
+        android:padding="20px"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#5EEF04"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/editTextTextPersonName" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Name of the trip"
+                app:startIconDrawable="@drawable/ic_baseline_trip_origin_24"
+                app:helperText="Requiered*"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                android:textColorHint="@color/black"
+                app:counterTextColor="@color/black"
+                app:endIconDrawable="@drawable/ic_baseline_error_24"
+                app:counterMaxLength="35"
+                app:startIconTint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:helperTextTextColor="#ED0909">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:ems="10"
+                    app:endIconMode="clear_text"
+                    android:maxLength="35"
+                    android:inputType="text"
+                    android:requiresFadingEdge="horizontal"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editdestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Destination"
+                app:startIconDrawable="@drawable/ic_baseline_add_location_24"
+                app:helperText="Requiered*"
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                android:textColorHint="@color/black"
+                app:counterTextColor="@color/black"
+                app:endIconDrawable="@drawable/ic_baseline_error_24"
+                app:counterMaxLength="35"
+                app:startIconTint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:helperTextTextColor="#ED0909">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextDest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Date of the trip"
+                app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+                app:helperText="Requiered*"
+                app:errorEnabled="true"
+                android:textColorHint="@color/black"
+                app:counterTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:endIconDrawable="@drawable/ic_baseline_error_24"
+                app:counterEnabled="true"
+                app:counterMaxLength="35"
+                app:startIconTint="@color/black"
+                app:helperTextTextColor="#ED0909">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:inputType="date"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/textRisk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="30dp"
+                android:layout_toStartOf="@+id/editTextTextPersonName"
+                android:fontFamily="sans-serif"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="Requires Risk Accessment"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/editTextTextPersonName" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:fontFamily="sans-serif"
+                    android:text="Yes"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:fontFamily="sans-serif"
+                    android:text="No"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20sp" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Description of the trip"
+                app:startIconDrawable="@drawable/ic_baseline_description_24"
+                app:helperText="Optional"
+                android:textColorHint="@color/black"
+                app:counterTextColor="@color/black"
+                app:counterEnabled="true"
+                app:startIconTint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:counterMaxLength="255"
+                app:helperTextTextColor="#ED0909">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edittime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Time of the trip"
+                app:startIconDrawable="@drawable/ic_baseline_access_time_24"
+                app:helperText="Required*"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="@color/black"
+                app:counterTextColor="@color/black"
+                app:endIconDrawable="@drawable/ic_baseline_error_24"
+                app:counterEnabled="true"
+                app:startIconTint="@color/black"
+                app:counterMaxLength="10"
+                app:helperTextTextColor="#ED0909">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:inputType="time"
+                android:requiresFadingEdge="horizontal"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+
+                android:layout_alignParentRight="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editCloth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Preferred clothing style"
+                app:startIconDrawable="@drawable/ic_baseline_cloud_24"
+                app:helperText="Required*"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="@color/black"
+                app:counterTextColor="@color/black"
+                app:endIconDrawable="@drawable/ic_baseline_error_24"
+                app:counterEnabled="true"
+                app:startIconTint="@color/black"
+                app:counterMaxLength="20"
+                app:helperTextTextColor="#ED0909">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editClothing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:requiresFadingEdge="horizontal"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editPreferredMeet"
+                app:boxStrokeColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Preferred meeting piont"
+                app:startIconDrawable="@drawable/ic_baseline_add_location_24"
+                app:errorEnabled="true"
+                app:endIconDrawable="@drawable/ic_baseline_error_24"
+                app:helperText="Required*"
+                app:counterEnabled="true"
+                app:counterMaxLength="35"
+                app:startIconTint="@color/black"
+                android:textColorHint="@color/black"
+                app:counterTextColor="@color/black"
+                app:helperTextTextColor="#ED0909">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Submit"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                app:startIconTint="@color/black"
+                android:textColor="#0B0A0B"
+                android:background="@drawable/round_background"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are you an admin ? :"
+                    android:textSize="20sp"
+                    android:padding="10sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"/>
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:padding="10sp"
+                    android:textSize="20sp"
+                    android:textColor="@color/teal_200"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
